@@ -97,6 +97,11 @@ variable "helm_release_create_namespace" {
   default = false
 }
 
+variable "helm_release_prevent_create_namespace" {
+  type    = bool
+  default = false
+}
+
 variable "helm_release_atomic" {
   type    = bool
   default = false

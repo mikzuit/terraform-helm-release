@@ -16,7 +16,7 @@ resource "helm_release" "helm_release" {
   replace          = var.helm_release_replace
   recreate_pods    = var.helm_release_recreate_pods
   verify           = var.helm_release_verify
-  create_namespace = var.helm_release_create_namespace
+  create_namespace = var.helm_release_namespace == "default" || var.helm_release_prevent_create_namespace ? false : true
   atomic           = var.helm_release_atomic
   lint             = var.helm_release_lint
   wait             = var.helm_release_wait

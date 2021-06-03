@@ -39,6 +39,7 @@ No modules.
 | <a name="input_helm_release_lint"></a> [helm\_release\_lint](#input\_helm\_release\_lint) | n/a | `bool` | `false` | no |
 | <a name="input_helm_release_max_history"></a> [helm\_release\_max\_history](#input\_helm\_release\_max\_history) | n/a | `number` | `5` | no |
 | <a name="input_helm_release_namespace"></a> [helm\_release\_namespace](#input\_helm\_release\_namespace) | n/a | `string` | n/a | yes |
+| <a name="input_helm_release_prevent_create_namespace"></a> [helm\_release\_prevent\_create\_namespace](#input\_helm\_release\_prevent\_create\_namespace) | n/a | `bool` | `false` | no |
 | <a name="input_helm_release_recreate_pods"></a> [helm\_release\_recreate\_pods](#input\_helm\_release\_recreate\_pods) | n/a | `bool` | `false` | no |
 | <a name="input_helm_release_release_name"></a> [helm\_release\_release\_name](#input\_helm\_release\_release\_name) | n/a | `string` | n/a | yes |
 | <a name="input_helm_release_replace"></a> [helm\_release\_replace](#input\_helm\_release\_replace) | n/a | `bool` | `false` | no |
