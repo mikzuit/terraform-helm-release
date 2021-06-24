@@ -20,7 +20,6 @@ resource "helm_release" "helm_release" {
   atomic           = var.helm_release_atomic
   lint             = var.helm_release_lint
   wait             = var.helm_release_wait
-  wait_for_jobs    = var.helm_release_wait_for_jobs
   skip_crds        = var.helm_release_skip_crds
   cleanup_on_fail  = var.helm_release_cleanup_on_fail
   reset_values     = var.helm_release_reset_values

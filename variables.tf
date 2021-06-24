@@ -52,11 +52,6 @@ variable "helm_release_verify" {
   default = false
 }
 
-variable "helm_release_wait_for_jobs" {
-  type    = bool
-  default = false
-}
-
 variable "helm_release_skip_crds" {
   type    = bool
   default = false
