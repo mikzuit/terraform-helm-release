@@ -121,3 +121,8 @@ variable "helm_release_max_history" {
   type    = number
   default = 5
 }
+
+variable "helm_release_value_files" {
+  type    = string
+  default = ""
+}

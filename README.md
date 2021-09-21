@@ -50,6 +50,7 @@ No modules.
 | <a name="input_helm_release_sensitive_values"></a> [helm\_release\_sensitive\_values](#input\_helm\_release\_sensitive\_values) | n/a | `map(string)` | `{}` | no |
 | <a name="input_helm_release_skip_crds"></a> [helm\_release\_skip\_crds](#input\_helm\_release\_skip\_crds) | n/a | `bool` | `false` | no |
 | <a name="input_helm_release_timeout"></a> [helm\_release\_timeout](#input\_helm\_release\_timeout) | n/a | `string` | `120` | no |
+| <a name="input_helm_release_value_files"></a> [helm\_release\_value\_files](#input\_helm\_release\_value\_files) | n/a | `string` | `""` | no |
 | <a name="input_helm_release_values"></a> [helm\_release\_values](#input\_helm\_release\_values) | n/a | `map(string)` | `{}` | no |
 | <a name="input_helm_release_verify"></a> [helm\_release\_verify](#input\_helm\_release\_verify) | n/a | `bool` | `false` | no |
 | <a name="input_helm_release_wait"></a> [helm\_release\_wait](#input\_helm\_release\_wait) | n/a | `bool` | `true` | no |
