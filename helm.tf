@@ -26,9 +26,9 @@ resource "helm_release" "helm_release" {
   reuse_values     = var.helm_release_reuse_values
   timeout          = var.helm_release_timeout
 
-  values = [
-    "${file("${var.helm_release_value_files}")}"
-  ]
+  # values = [
+  #   "${file("${var.helm_release_value_files}")}"
+  # ]
 
   dynamic "set" {
     for_each = local.helm_release_values
