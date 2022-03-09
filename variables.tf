@@ -7,6 +7,15 @@ variable "helm_release_values_type" {
   type    = string
   default = "auto"
 }
+variable "helm_release_string_values" {
+  type    = map(string)
+  default = {}
+}
+
+variable "helm_release_string_values_type" {
+  type    = string
+  default = "auto"
+}
 
 variable "helm_release_sensitive_values" {
   type    = map(string)

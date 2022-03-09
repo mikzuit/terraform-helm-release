@@ -2,6 +2,10 @@ locals {
   helm_release_values = merge(var.helm_release_values, {
     "release.timestamp" = random_string.force_helm_release.result
   })
+
+  helm_release_string_values = merge(var.helm_release_string_values, {
+    "release.timestamp" = random_string.force_helm_release.result
+  })
 }
 
 resource "helm_release" "helm_release" {
@@ -37,6 +41,16 @@ resource "helm_release" "helm_release" {
       name  = set.key
       value = set.value
       type  = var.helm_release_values_type
+    }
+  }
+
+  dynamic "set" {
+    for_each = local.helm_release_string_values
+
+    content {
+      name  = set.key
+      value = set.value
+      type  = var.helm_release_string_values_type
     }
   }
 
