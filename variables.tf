@@ -3,9 +3,19 @@ variable "helm_release_values" {
   default = {}
 }
 
+variable "helm_release_values_type" {
+  type    = map(string)
+  default = "auto"
+}
+
 variable "helm_release_sensitive_values" {
   type    = map(string)
   default = {}
+}
+
+variable "helm_release_sensitive_values_type" {
+  type    = map(string)
+  default = "auto"
 }
 
 variable "helm_release_chart" {

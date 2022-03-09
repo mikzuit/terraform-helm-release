@@ -36,6 +36,7 @@ resource "helm_release" "helm_release" {
     content {
       name  = set.key
       value = set.value
+      type  = var.helm_release_values_type
     }
   }
 
@@ -45,6 +46,7 @@ resource "helm_release" "helm_release" {
     content {
       name  = set_sensitive.key
       value = set_sensitive.value
+      type  = var.helm_release_values_type
     }
   }
 
