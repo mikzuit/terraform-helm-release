@@ -9,7 +9,7 @@
 
 | Name | Version |
 |------|---------|
-| <a name="provider_helm"></a> [helm](#provider\_helm) | 2.3.0 |
+| <a name="provider_helm"></a> [helm](#provider\_helm) | 2.4.1 |
 | <a name="provider_random"></a> [random](#provider\_random) | 3.1.0 |
 
 ## Modules
@@ -48,10 +48,12 @@ No modules.
 | <a name="input_helm_release_reset_values"></a> [helm\_release\_reset\_values](#input\_helm\_release\_reset\_values) | n/a | `bool` | `false` | no |
 | <a name="input_helm_release_reuse_values"></a> [helm\_release\_reuse\_values](#input\_helm\_release\_reuse\_values) | n/a | `bool` | `false` | no |
 | <a name="input_helm_release_sensitive_values"></a> [helm\_release\_sensitive\_values](#input\_helm\_release\_sensitive\_values) | n/a | `map(string)` | `{}` | no |
+| <a name="input_helm_release_sensitive_values_type"></a> [helm\_release\_sensitive\_values\_type](#input\_helm\_release\_sensitive\_values\_type) | n/a | `string` | `"auto"` | no |
 | <a name="input_helm_release_skip_crds"></a> [helm\_release\_skip\_crds](#input\_helm\_release\_skip\_crds) | n/a | `bool` | `false` | no |
 | <a name="input_helm_release_timeout"></a> [helm\_release\_timeout](#input\_helm\_release\_timeout) | n/a | `string` | `120` | no |
 | <a name="input_helm_release_value_files"></a> [helm\_release\_value\_files](#input\_helm\_release\_value\_files) | n/a | `string` | `""` | no |
 | <a name="input_helm_release_values"></a> [helm\_release\_values](#input\_helm\_release\_values) | n/a | `map(string)` | `{}` | no |
+| <a name="input_helm_release_values_type"></a> [helm\_release\_values\_type](#input\_helm\_release\_values\_type) | n/a | `string` | `"auto"` | no |
 | <a name="input_helm_release_verify"></a> [helm\_release\_verify](#input\_helm\_release\_verify) | n/a | `bool` | `false` | no |
 | <a name="input_helm_release_wait"></a> [helm\_release\_wait](#input\_helm\_release\_wait) | n/a | `bool` | `true` | no |
 
