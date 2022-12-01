@@ -75,6 +75,6 @@ resource "random_string" "force_helm_release" {
   special = false
   upper   = true
   lower   = true
-  number  = true
+  numeric  = true
 }
 
